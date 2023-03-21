@@ -1,0 +1,98 @@
+.button {
+	--button-background: #ddb4b3;
+	--button-border-color: #ddb4b3;
+	--button-border-radius: 1rem;
+	--button-border-width: 1px solid;
+	--button-color: white;
+	--button-font-size: 0.875rem;
+	--button-font-weight: 700;
+	--button-height:  2.5rem;
+	--button-line-height: 0.75rem;
+	--button-padding-x: 1rem;
+	--button-padding-y: 0;
+	--button-width: auto;
+	display: inline-flex;
+	gap: 0.5rem;
+  
+	align-items: center;
+	justify-content: center;
+	width: var(--button-width);
+	height: var(--button-height);
+	padding: var(--button-padding-y) var(--button-padding-x);
+
+	color: var(--button-color);
+	font-weight: var(--button-font-weight);
+	font-size: var(--button-font-size);
+	font-family: inherit;
+	line-height: var(--button-line-height);
+	text-align: center;
+
+	background: var(--button-background);
+	border: var(--button-border-width) var(--button-border-color);
+	border-radius: var(--button-border-radius);
+	outline: 0;
+	cursor: pointer;
+
+	transition-duration: 150ms;
+	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+}
+  
+.button:disabled {
+	--button-background: #E7E9EE;
+	--button-border-color: #E7E9EE;
+	--button-color: #B9BFCA;
+  
+	cursor: not-allowed;
+}
+  
+.button--fullwidth {
+	width: 100%;
+}
+  
+/**
+   * Button sizes
+   * 'xs' | 'sm' | 'md' (default) | 'lg'
+   */
+  
+.button--xs {
+	--button-size: 1.5rem;
+	--button-font-size: 0.625rem;
+	--button-height: var(--button-size);
+	--button-padding-x: 0.5rem;
+}
+  
+.button--sm {
+	--button-size: 2rem;
+	--button-font-size: 0.75rem;
+	--button-height: var(--button-size);
+	--button-padding-x: 0.75rem;
+}
+  
+.button--md {
+	--button-size: 2.5rem;
+	--button-font-size: 0.875rem;
+	--button-height: var(--button-size);
+	--button-padding-x: 1rem;
+}
+  
+.button--lg {
+	--button-size: 3rem;
+	--button-font-size: 1rem;
+	--button-height: var(--button-size);
+	--button-padding-x: 1.5rem;
+}
+
+/**
+* Button variants
+* 'solid' (default) | 'outline' | 'ghost' | 'danger'
+*/
+
+.button--pink {
+	--button-background: #ddb4b3;
+	--button-border-color: #ddb4b3;
+}
+
+.button--blue {
+	--button-background: rgb(49 151 149);
+	--button-border-color: rgb(49 151 149);
+}

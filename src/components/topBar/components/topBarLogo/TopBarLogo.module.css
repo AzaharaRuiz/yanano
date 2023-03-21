@@ -1,0 +1,7 @@
+.logo {
+	--logo-width: 50px;
+  
+	width: var(--logo-width);
+	height: auto;
+}
+  
