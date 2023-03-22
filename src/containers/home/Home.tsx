@@ -5,7 +5,7 @@ import News from "./news/News";
 
 const Home = ({ products = [] }) => {
   return (
-    <Page title="YANANO">
+    <Page title="Home">
       <Banner />
       <News products={products} />
     </Page>

@@ -15,7 +15,7 @@ export default function Page({ title, children, isLoading }: PageProps) {
   return (
     <div className={styles.page}>
       <Head>
-        <title>{title} | yanano</title>
+        <title>{`${title} | YANANO`}</title>
       </Head>
       <TopBar />
       <div className={styles.body}>
