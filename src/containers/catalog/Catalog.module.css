@@ -12,11 +12,9 @@
 }
 
 .title {
-	margin-bottom: 1rem;
-
 	color: #333;
 	font-size: 24px;
-	font-family: Montserrat, sans-serif;
+	font-family: optima, sans-serif;
 	letter-spacing: 0.05em;
 	text-align: center;
 	text-transform: uppercase;
