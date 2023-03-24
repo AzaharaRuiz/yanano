@@ -13,13 +13,15 @@ export type VariantsType = keyof typeof VARIANTS;
 interface CardProps {
   product: Product;
   variant?: VariantsType;
+  width?: number;
   addToCart?: () => void;
 }
 
 export default function Card({
   product,
-  addToCart = () => {},
   variant = "cream",
+  width,
+  addToCart = () => {},
 }: CardProps) {
   return (
     <Box
@@ -28,8 +30,8 @@ export default function Card({
       margin="30px"
       padding="20px"
       backgroundColor={variant === "cream" ? "#f6f4e8" : "white"}
-      width={400}
-      minWidth={300}
+      minWidth={width || 320}
+      maxWidth={width || 360}
       height={470}
       borderBottom={
         variant === "cream" ? "1px solid transparent" : "1px solid gray"
@@ -41,8 +43,7 @@ export default function Card({
         src={product.image}
         alt={product.title}
         boxSize="sm"
-        maxWidth="100%"
-        minWidth="100%"
+        width="100%"
         height={220}
         backgroundColor="white"
       />

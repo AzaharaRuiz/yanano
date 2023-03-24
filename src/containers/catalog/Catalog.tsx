@@ -26,6 +26,7 @@ export default function Catalog() {
             <Card
               key={product.id}
               product={product}
+              width={360}
               addToCart={() =>
                 addToCart({ id: product.id, title: product.title, units: 1 })
               }
@@ -41,6 +42,7 @@ export default function Catalog() {
             <Card
               key={product.id}
               product={product}
+              width={360}
               addToCart={() =>
                 addToCart({ id: product.id, title: product.title, units: 1 })
               }
